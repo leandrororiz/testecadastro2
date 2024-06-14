@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        text-align: center;
+        }
+
+        form{
+            text-align: center;
+            
+            
+        }
+
+        h1{
+            text-align: center;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 80px;
+
+        }
+
+      input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 45%;
+      }
+
+       
+       
+</style>
+
+
+<body>
+    <h1>Dados Cadastrais</h1>
+    <form>
+        Nome:
+        <input type="text" id="nm" />
+     
+        <br><br>
+        Usuario:
+        <input type="text" id="user" />
+      
+        <br><br>
+        Email:
+        <input type="text" id="em" />
+      
+      
+        <br><br>
+        CPf:
+        <input type="text" id="cp" />
+      
+       
+        <br><br>
+        Data de Nascimeto:
+        <input type="text" id="dt" />
+      
+      
+        <br><br>
+        Sexo:
+        <input type="text" id="sx" />
+      
+      
+      
+        <br><br>
+        Endereço:
+        <input type="text" id="end" />
+      
+     
+        <br><br>
+        Senha:
+        <input type="text" id="sn" />
+      
+        <div id="Cadastro"></div>
+        
+        <input type="button" value="Cadastro" onclick="cadastrar()"/>
+
+
+
+       
+    </form>
+
+    <script>
+        function cadastrar() {
+         var nm = document.getElementById("nm").value;
+         var user = document.getElementById("user").value;
+         var em = document.getElementById("em").value;
+         var cp = document.getElementById("cp").value;
+         var dt = document.getElementById("dt").value;
+         var sx = document.getElementById("sx").value;
+         var end = document.getElementById("end").value;
+         var sn = document.getElementById("sn").value;
+         var sna = document.getElementById("Cadastro");
+            
+                sna.innerHTML = `Seu nome é ${nm}, seu usuario é ${user}, seu email é ${em}, seu CPF é ${cp}, sua Data de Nascimento é ${dt},
+                seu sexo é ${sx}, ser Endereço é ${end}, sua senha é ${sn} `
+        }
+
+       
+
+
+
+
+
+
+
+    </script>
+    
+
+</body>
+</html>
